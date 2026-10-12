@@ -58,12 +58,6 @@ auto_instructions = tk.Label(
     text = "Instructions will go here. Moving a ball back and forth from target to target.")
 auto_instructions.pack()
 
-# They'll click right and drag left into the target spot, let go and it disappears and starts the next one.
-# Possible to make moving from one task to the next a little smooth? I don't want anything jarring or immediately flashing.
-# I feel like it's better that everything goes smooth for a natural feel to prevent jarring the attention.
-# When I was a participant, the tasks I did felt abrupt and weird, and they weren't attention tasks.
-# Sound user design.
-
 
 #---------------------------------------------------------------------------
 ####### SCREEN 6 AUTOMATIC TASK PRACTICE USER
@@ -96,7 +90,6 @@ auto_sound_measure = tk.Label(
 auto_sound_measure.pack()
 
 # Slider
-# A 0-100 scale seems better to me because it may encourage the person to be as accurate as possible.
 
 #---------------------------------------------------------------------------
 ####### SCREEN 10 INSTRUCTIONS FOR FOCUS TASK
