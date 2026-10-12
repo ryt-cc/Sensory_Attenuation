@@ -34,13 +34,13 @@ demo_instructions.pack(pady=20)
 age_frame = tk.Frame(main_frame, bg="black")
 age_frame.pack(pady=10)
 
-tk.Label(
+age_label = tk.Label(
     age_frame,
     text="Age: ",
     bg="black",
     fg="#FFF5E8",
-    font=("Arial", 12)
-).pack(side="left")
+    font=("Arial", 12))
+age_label.pack(side="left")
 
 age_entry = tk.Entry(age_frame)
 age_entry.pack(side="left")
@@ -49,54 +49,60 @@ age_entry.pack(side="left")
 gender_frame = tk.Frame(main_frame, bg="black")
 gender_frame.pack(pady=10)
 
-tk.Label(
+gender_label = tk.Label(
     gender_frame,
     text="Gender:",
     bg="black",
     fg="#FFF5E8",
-    font=("Arial", 12)
-).pack(side="left", padx=(0, 10))
+    font=("Arial", 12))
 
-gender_var = tk.StringVar(value="")
-for g in ["Female", "Male", "Non binary", "Other"]:
-    tk.Radiobutton(
+gender_label.pack(side="left", padx=(0, 10))
+
+gender_var = tk.StringVar(value="None")
+for each_gender in ["Female", "Male", "Non binary", "Other"]:
+    gender_button = tk.Radiobutton(
         gender_frame,
-        text=g,
+        text=each_gender,
         variable=gender_var,
-        value=g,
+        value=each_gender,
         bg="black",
         fg="#FFF5E8",
         selectcolor="black",
         activebackground="black",
-        activeforeground="#FFF5E8"
-    ).pack(side="left", padx=5)
+        activeforeground="#FFF5E8")
+
+    gender_button.pack(side="left", padx=5)
 
 #Handed
 
 hand_frame = tk.Frame(main_frame, bg="black")
 hand_frame.pack(pady=10)
 
-tk.Label(
+hand_label = tk.Label(
     hand_frame,
-    text="Handedness:",
+    text="Are you left or right handed?:",
     bg="black",
     fg="#FFF5E8",
     font=("Arial", 12)
-).pack(side="left", padx=(0, 10))
+)
+hand_label.pack(side="left", padx=(0, 10))
 
-hand_var = tk.StringVar(value="")
-for h in ["Left", "Right"]:
-    tk.Radiobutton(
+hand_var = tk.StringVar(value="None")
+
+for each_hand in ["Left", "Right"]:
+    hand_button = tk.Radiobutton(
         hand_frame,
-        text=h,
+        text=each_hand,
         variable=hand_var,
-        value=h,
+        value=each_hand,
         bg="black",
         fg="#FFF5E8",
         selectcolor="black",
         activebackground="black",
-        activeforeground="#FFF5E8"
-    ).pack(side="left", padx=5)
+        activeforeground="#FFF5E8")
+
+    hand_button.pack(side="left", padx=5)
+
 
 # Ok button
 tk.Button(main_frame, text="Ok ->", font=("Arial", 12)).pack(pady=20)
