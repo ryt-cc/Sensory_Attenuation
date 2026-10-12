@@ -1,23 +1,31 @@
 import tkinter as tk
 
+## TO DO: Make this go to the demographics page
+
 #--------------------------------------------------------------------------
 ####### SCREEN 1: OPEN WINDOW + INTRO
 #--------------------------------------------------------------------------
 
 # Window
 window = tk.Tk()
-window.title("src")
-window.geometry("400x250")
-window.configure(bg = "#EEC6C6")
-
-# Heading
-title = tk.Label(
-    window,
-    text = "Does it need a title?")
-title.pack()
+window.title("VDW Lab")
+window.geometry("1280x720")
+window.configure(bg = "black")
 
 # Intro
 intro = tk.Label(
     window,
-    text = "This is an experiment blah blah blah doing things?")
-intro.pack()
+    text = "Please press 'Ok' to begin the experiment.",
+    bg = "black",
+    fg = "#FFF5E8",
+    font = ("Arial", 14))
+intro.place(relx=0.5, rely=0.5, anchor="center")
+
+# Next button
+btn = tk.Button(
+    window,
+    text = "Ok ->",
+    font = ("Arial", 12))
+btn.place(relx=0.5, rely=0.55, anchor="center")
+
+window.mainloop()
