@@ -6,7 +6,7 @@ import tkinter as tk
 
 # Window
 window = tk.Tk()
-window.title("Sensory Attenuation Experiment")
+window.title("src")
 window.geometry("400x250")
 window.configure(bg = "#EEC6C6")
 
@@ -105,48 +105,48 @@ auto_sound_measure.pack()
 # A 0-100 scale seems better to me because it may encourage the person to be as accurate as possible.
 
 #---------------------------------------------------------------------------
-####### SCREEN 10 INSTRUCTIONS FOR ANALYTIC TASK
+####### SCREEN 10 INSTRUCTIONS FOR FOCUS TASK
 #---------------------------------------------------------------------------
 
-analytic_instructions = tk.Label(
+focus_instructions = tk.Label(
     window, 
     text = "Instructions will go here. Dragging a ball from right to left into the target")
-analytic_instructions.pack()
+focus_instructions.pack()
 
 #---------------------------------------------------------------------------
-####### SCREEN 11 ANALYTIC TASK PRACTICE PROMPT
+####### SCREEN 11 FOCUS TASK PRACTICE PROMPT
 #---------------------------------------------------------------------------
 
-analytic_practice_prompt = tk.Label(
+focus_practice_prompt = tk.Label(
     window, 
     text = "Let's complete two practice runs. After two are completed, you will then proceed to the task.")
-analytic_practice_prompt.pack()
+focus_practice_prompt.pack()
 
 #---------------------------------------------------------------------------
-####### SCREEN 12 ANALYTIC TASK PRACTICE USER
+####### SCREEN 12 FOCUS TASK PRACTICE USER
 #---------------------------------------------------------------------------
 
 #---------------------------------------------------------------------------
-####### SCREEN 13 ANALYTIC TASK RECORDED PROMPT
+####### SCREEN 13 FOCUS TASK RECORDED PROMPT
 #---------------------------------------------------------------------------
 
-analytic_recorded_prompt = tk.Label(
+focus_recorded_prompt = tk.Label(
     window,
     text = "You've completed the practice. When you are ready to move on, please press continue")
-analytic_recorded_prompt.pack()
+focus_recorded_prompt.pack()
 #---------------------------------------------------------------------------
-####### SCREEN 14 ANALYTIC TASK RECORDED USER
-#---------------------------------------------------------------------------
-
-#---------------------------------------------------------------------------
-####### SCREEN 15 ANALYTIC SOUND MEASURE
+####### SCREEN 14 FOCUS TASK RECORDED USER
 #---------------------------------------------------------------------------
 
-analytic_sound_measure = tk.Label(
+#---------------------------------------------------------------------------
+####### SCREEN 15 FOCUS SOUND MEASURE
+#---------------------------------------------------------------------------
+
+focus_sound_measure = tk.Label(
     window,
     text = "During each task, you heard a beeping sound. Please move the slider "
            "to match how loud the sound was to you.")
-analytic_sound_measure.pack()
+focus_sound_measure.pack()
 
 #---------------------------------------------------------------------------
 ####### SCREEN 16 "Thanks. If you're a student completing this for class credit, 
