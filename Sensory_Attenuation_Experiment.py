@@ -1,5 +1,7 @@
 import tkinter as tk
 
+####### This file is scratch paper
+
 #--------------------------------------------------------------------------
 ####### SCREEN 1: OPEN WINDOW + INTRO
 #--------------------------------------------------------------------------
@@ -62,14 +64,6 @@ auto_instructions.pack()
 # When I was a participant, the tasks I did felt abrupt and weird, and they weren't attention tasks.
 # Sound user design.
 
-#---------------------------------------------------------------------------
-####### SCREEN 5 AUTOMATIC TASK PRACTICE PROMPT
-#---------------------------------------------------------------------------
-
-auto_practice_prompt = tk.Label(
-    window, 
-    text = "Let's complete two practice runs. After two are completed, you will then proceed to the task.")
-auto_practice_prompt.pack()
 
 #---------------------------------------------------------------------------
 ####### SCREEN 6 AUTOMATIC TASK PRACTICE USER
