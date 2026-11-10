@@ -1,0 +1,4 @@
+WARNING:root:This is a debug message (useful for troubleshooting)
+WARNING:root:This is a debug message (useful for troubleshooting)
+DEBUG:root:Maybe you know but probably fine
+CRITICAL:root:Oh god no the huge manaty of it all
