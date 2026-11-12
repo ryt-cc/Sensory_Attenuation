@@ -14,7 +14,7 @@ mouse_motion_debounce = False
 start_time = None
 end_time = None
 while True:
-    # Process Characters inputs.
+    # Process Actors inputs.
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()

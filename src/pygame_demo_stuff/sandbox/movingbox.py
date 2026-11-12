@@ -29,7 +29,7 @@ while True:
         player_x_velocity += drag
 
     current_play_rect = player.copy()
-    # Process Characters inputs.
+    # Process Actors inputs.
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()

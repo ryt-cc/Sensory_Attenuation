@@ -1,6 +1,6 @@
 import pygame
 
-from src.controllers.Characters.charactermodal import MoveDirection, CharacterAction
+from src.controllers.Actors.baseactor import CharacterAction, MoveDirection
 
 
 def get_action_from_keypress() -> CharacterAction:
