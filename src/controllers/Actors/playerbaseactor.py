@@ -1,11 +1,13 @@
 import pygame
 
 from src.controllers.Actors.baseactor import BaseActor, MoveDirection
+from src.controllers.games.constants import SCREEN_SIZE
 
 
 class PlayerBase(BaseActor):
     movement_direction: MoveDirection
     collision_box = pygame.Rect
+    previous_location = (0,0)
 
     def __init__(self,
                  name: str,
@@ -25,3 +27,9 @@ class PlayerBase(BaseActor):
         self.rect.x = screen_cords[0]
         self.rect.y = screen_cords[1]
         self.collision_box.center = self.rect.center
+
+    def keep_inside_screen(self):
+        if self.rect.x not in range(0,SCREEN_SIZE[0]) or self.rect.y not in range(0,SCREEN_SIZE[1]):
+            print(f"Current: {self.rect.center}\nPrevious: {self.previous_location}")
+            self.rect.center = self.previous_location
+            print("No running for you")

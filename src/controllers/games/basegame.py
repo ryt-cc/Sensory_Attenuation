@@ -53,6 +53,6 @@ class BaseGame(ABC):
     def calculate_score(self) -> GameResults:
         """Returns results object based on game type"""
 
-    def start(self) -> None:
+    def start(self,number_of_rounds_to_play:int) -> None:
         """Setups up game and gives controller to player"""
 
