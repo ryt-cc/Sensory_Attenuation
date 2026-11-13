@@ -2,7 +2,6 @@ import random
 
 import pygame.mouse
 
-from src.controllers.Actors.baseactor import BaseActor
 from src.controllers.Actors.playerbaseactor import PlayerBase
 from src.controllers.games.constants import SCREEN_SIZE
 
@@ -38,7 +37,6 @@ class PlayerBall(PlayerBase):
 
     def reset_ball_to_random_y_location(self,spawn_line:int) -> None:
         """Reset the ball to a given X coordinate but random Y"""
-
         self.rect.x = spawn_line
         self.rect.y = random.randint(10,SCREEN_SIZE[1]-10)
         self.collision_box.center = self.rect.center

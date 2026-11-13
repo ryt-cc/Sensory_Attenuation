@@ -30,6 +30,4 @@ class PlayerBase(BaseActor):
 
     def keep_inside_screen(self):
         if self.rect.x not in range(0,SCREEN_SIZE[0]) or self.rect.y not in range(0,SCREEN_SIZE[1]):
-            print(f"Current: {self.rect.center}\nPrevious: {self.previous_location}")
             self.rect.center = self.previous_location
-            print("No running for you")

@@ -4,7 +4,8 @@ import math
 import pygame
 
 
-def make_beep(frequency=440, duration_ms=500, volume=0.1):
+def make_beep(frequency=440, duration_ms=500, volume=1):
+    volume = volume/100
     pygame.mixer.init(frequency=44100, size=-16, channels=1) # might wanna move this outside of this func at some point
     sample_rate = 44100
     n_samples = int(sample_rate * (duration_ms / 1000.0))

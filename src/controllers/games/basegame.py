@@ -12,6 +12,7 @@ class GameResults:
     player_id:int
     game_name:str
     results:dict
+    rounds_counter:int
 
 
 
@@ -24,6 +25,8 @@ def handle_events():
             if event.key == pygame.K_ESCAPE:
                 pygame.quit()
                 raise SystemExit
+            if event.key == pygame.K_i:
+                return 10
 
 
 class BaseGame(ABC):
